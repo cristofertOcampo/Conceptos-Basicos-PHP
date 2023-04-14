@@ -1,0 +1,357 @@
+1) Que son los operadores aritmeticos
+R/
+que son los operadores aritmeticos en promagramacion resumen
+
+Los operadores aritméticos son símbolos utilizados en programación para realizar operaciones matemáticas entre dos o más valores. Estos operadores incluyen:
+
+Suma (+): se utiliza para sumar dos valores.
+Resta (-): se utiliza para restar dos valores.
+Multiplicación (*): se utiliza para multiplicar dos valores.
+División (/): se utiliza para dividir dos valores.
+Módulo (%): se utiliza para obtener el resto de la división entera de dos valores.
+Incremento (++): se utiliza para aumentar en una unidad el valor de una variable.
+Decremento (--): se utiliza para disminuir en una unidad el valor de una variable.
+
+Los operadores aritméticos son ampliamente utilizados en programación para realizar cálculos matemáticos y manipular valores numéricos. Además, también se pueden utilizar para concatenar cadenas de texto o realizar operaciones lógicas en algunos lenguajes de programación.
+
+2) Que son los operadores logicos
+R/ 
+Los operadores lógicos son símbolos utilizados en programación para realizar operaciones lógicas entre dos o más valores booleanos (verdadero o falso). Estos operadores incluyen:
+
+AND (&&): devuelve verdadero si ambos valores son verdaderos, de lo contrario, devuelve falso.
+OR (||): devuelve verdadero si al menos uno de los valores es verdadero, de lo contrario, devuelve falso.
+NOT (!): invierte el valor de la expresión lógica, es decir, si la expresión es verdadera, devuelve falso y si es falsa, devuelve verdadero.
+
+Los operadores lógicos son ampliamente utilizados en programación para realizar pruebas de condición y tomar decisiones en base a ellas. También son utilizados para realizar comparaciones entre valores numéricos y de texto. Los operadores lógicos son una parte fundamental de la programación y su uso es esencial para construir algoritmos y estructuras de control de flujo.
+
+3) Que son los operadores relacionales
+R/ Los operadores relacionales son símbolos utilizados en programación para comparar dos valores y devolver un valor booleano (verdadero o falso) en base a la relación entre ellos. Estos operadores incluyen:
+
+Igualdad (==): devuelve verdadero si ambos valores son iguales, de lo contrario, devuelve falso.
+Desigualdad (!=): devuelve verdadero si los valores son diferentes, de lo contrario, devuelve falso.
+Mayor que (>): devuelve verdadero si el primer valor es mayor que el segundo, de lo contrario, devuelve falso.
+Menor que (<): devuelve verdadero si el primer valor es menor que el segundo, de lo contrario, devuelve falso.
+Mayor o igual que (>=): devuelve verdadero si el primer valor es mayor o igual que el segundo, de lo contrario, devuelve falso.
+Menor o igual que (<=): devuelve verdadero si el primer valor es menor o igual que el segundo, de lo contrario, devuelve falso.
+
+Los operadores relacionales son ampliamente utilizados en programación para realizar comparaciones entre valores numéricos y de texto, y para tomar decisiones en base a ellas. Además, también se pueden utilizar en combinación con operadores lógicos para realizar pruebas de condición más complejas. Los operadores relacionales son una parte fundamental de la programación y su uso es esencial para construir algoritmos y estructuras de control de flujo.
+
+4) funciones para string en php
+R/
+En PHP existen varias funciones para manipular cadenas de texto (strings). Algunas de las funciones más comunes son:
+
+strlen(): devuelve la longitud de una cadena de texto.
+    $cadena = "Hola mundo";
+    $longitud = strlen($cadena);
+    echo $longitud; // muestra 10
+
+strtoupper(): convierte una cadena de texto a mayúsculas.
+    $cadena = "Hola mundo";
+    $mayusculas = strtoupper($cadena);
+    echo $mayusculas; // muestra HOLA MUNDO
+
+strtolower(): convierte una cadena de texto a minúsculas.
+    $cadena = "Hola mundo";
+    $minusculas = strtolower($cadena);
+    echo $minusculas; // muestra hola mundo
+
+substr(): devuelve una parte de una cadena de texto.
+    $cadena = "Hola mundo";
+    $subcadena = substr($cadena, 0, 4);
+    echo $subcadena; // muestra Hola
+
+str_replace(): reemplaza una subcadena de una cadena de texto por otra.
+    $cadena = "Hola mundo";
+    $nueva_cadena = str_replace("mundo", "amigo", $cadena);
+    echo $nueva_cadena; // muestra Hola amigo
+
+strpos(): encuentra la posición de una subcadena dentro de una cadena de texto.
+    $cadena = "Hola mundo";
+    $posicion = strpos($cadena, "mundo");
+    echo $posicion; // muestra 5
+
+
+5) funciones matemáticas en php
+R/
+
+En PHP existen varias funciones matemáticas incorporadas que se pueden utilizar para realizar operaciones matemáticas básicas y avanzadas. Algunas de las funciones más comunes son:
+
+abs(): devuelve el valor absoluto de un número.
+    $numero = -10;
+    $valor_absoluto = abs($numero);
+    echo $valor_absoluto; // muestra 10
+
+
+sqrt(): devuelve la raíz cuadrada de un número.
+    $numero = 25;
+    $raiz_cuadrada = sqrt($numero);
+    echo $raiz_cuadrada; // muestra 5
+
+pow(): eleva un número a una potencia.
+    $numero = 5;
+    $potencia = pow($numero, 2);
+    echo $potencia; // muestra 25
+
+round(): redondea un número a un número determinado de decimales.
+    $numero = 3.14159;
+    $redondeado = round($numero, 2);
+    echo $redondeado; // muestra 3.14
+
+rand(): devuelve un número aleatorio dentro de un rango específico.
+    $numero_aleatorio = rand(1, 10);
+    echo $numero_aleatorio; // muestra un número aleatorio entre 1 y 10
+
+pi(): devuelve el valor de la constante matemática Pi.
+    $pi = pi();
+    echo $pi; // muestra 3.1415926535898
+
+
+6) funciones fecha en php
+R/
+
+En PHP existen varias funciones para trabajar con fechas y horas. Algunas de las funciones más comunes son:
+
+date(): devuelve la fecha y hora actual en un formato específico.
+    $fecha_actual = date("Y-m-d H:i:s");
+    echo $fecha_actual; // muestra la fecha y hora actual en formato "YYYY-MM-DD HH:MM:SS"
+
+
+strtotime(): convierte una cadena de fecha y hora en una marca de tiempo Unix.
+    $fecha = "2022-04-14";
+    $marca_de_tiempo = strtotime($fecha);
+    echo $marca_de_tiempo; // muestra la marca de tiempo Unix correspondiente a la fecha especificada
+
+
+mktime(): devuelve la marca de tiempo Unix para una fecha y hora específicas.
+    $marca_de_tiempo = mktime(0, 0, 0, 4, 14, 2022);
+    echo $marca_de_tiempo; // muestra la marca de tiempo Unix correspondiente a la fecha y hora especificadas
+
+
+date_diff(): devuelve la diferencia entre dos fechas.
+    $fecha1 = date_create("2022-04-14");
+    $fecha2 = date_create("2023-04-14");
+    $diferencia = date_diff($fecha1, $fecha2);
+    echo $diferencia->format("%a días"); // muestra el número de días entre las dos fechas
+
+
+date_add(): agrega una cantidad de tiempo a una fecha.
+    $fecha = date_create("2022-04-14");
+    date_add($fecha, date_interval_create_from_date_string("1 week"));
+    echo date_format($fecha, "Y-m-d"); // muestra la fecha resultante después de agregar una semana
+
+
+date_sub(): resta una cantidad de tiempo a una fecha.
+    $fecha = date_create("2022-04-14");
+    date_sub($fecha, date_interval_create_from_date_string("1 month"));
+    echo date_format($fecha, "Y-m-d"); // muestra la fecha resultante después de restar un mes
+
+
+
+7) que son los arreglos asociativos en php
+R/
+En PHP, un arreglo asociativo es una estructura de datos que permite almacenar valores relacionados con claves o nombres específicos en lugar de índices numéricos. Cada elemento en un arreglo asociativo consiste en un par de clave-valor, donde la clave es un nombre o etiqueta que se utiliza para identificar y acceder a un valor específico dentro del arreglo.
+
+En lugar de acceder a los elementos del arreglo a través de un índice numérico, se utilizan las claves del arreglo para acceder a los valores correspondientes. Por ejemplo:
+
+$mi_arreglo = array(
+  "nombre" => "Juan",
+  "edad" => 30,
+  "ciudad" => "México"
+);
+
+echo $mi_arreglo["nombre"]; // muestra "Juan"
+echo $mi_arreglo["edad"]; // muestra 30
+echo $mi_arreglo["ciudad"]; // muestra "México"
+
+En este ejemplo, se define un arreglo asociativo $mi_arreglo con tres elementos, donde cada elemento tiene una clave ("nombre", "edad", "ciudad") y un valor correspondiente ("Juan", 30, "México"). Para acceder a los valores del arreglo, se utiliza la clave del elemento correspondiente en lugar de un índice numérico.
+
+Los arreglos asociativos son útiles cuando se necesita almacenar y acceder a valores relacionados por nombre o etiqueta en lugar de por posición. Se pueden utilizar en una variedad de situaciones, como para almacenar información de usuario, configuración de aplicación, datos de contacto, entre otros.
+
+
+
+8) funciones para arreglos en php
+R/
+
+En PHP, existen varias funciones útiles para trabajar con arreglos, algunas de las más comunes son:
+
+count(): devuelve el número de elementos en un arreglo.
+		$mi_arreglo = array(1, 2, 3, 4, 5);
+		echo count($mi_arreglo); // muestra 5
+
+array_push(): agrega uno o más elementos al final de un arreglo.
+		$mi_arreglo = array("manzana", "banana", "naranja");
+		$ultima_fruta = array_pop($mi_arreglo);
+		echo $ultima_fruta; // muestra "naranja"
+
+array_pop(): elimina el último elemento de un arreglo y lo devuelve.
+		$mi_arreglo = array("manzana", "banana", "naranja");
+		$ultima_fruta = array_pop($mi_arreglo);
+		echo $ultima_fruta; // muestra "naranja"
+
+array_shift(): elimina el primer elemento de un arreglo y lo devuelve.
+		$mi_arreglo = array("manzana", "banana", "naranja");
+		$primera_fruta = array_shift($mi_arreglo);
+		echo $primera_fruta; // muestra "manzana"
+
+
+array_unshift(): agrega uno o más elementos al inicio de un arreglo.
+		$mi_arreglo = array("manzana", "banana", "naranja");
+		array_unshift($mi_arreglo, "kiwi", "fresa");
+		print_r($mi_arreglo); // muestra el arreglo actualizado
+
+
+array_slice(): devuelve un subconjunto de elementos de un arreglo, desde el índice y longitud especificados.
+		$mi_arreglo = array(1, 2, 3, 4, 5);
+		$sub_arreglo = array_slice($mi_arreglo, 1, 3);
+		print_r($sub_arreglo); // muestra [2, 3, 4]
+
+array_merge(): combina dos o más arreglos en uno solo.
+		$arreglo1 = array("a", "b", "c");
+		$arreglo2 = array("d", "e", "f");
+		$nuevo_arreglo = array_merge($arreglo1, $arreglo2);
+		print_r($nuevo_arreglo); // muestra ["a", "b", "c", "d", "e", "f"]
+
+
+9) Que es una clase 
+R/
+En programación, una clase es una plantilla o modelo que define un conjunto de propiedades y métodos que tienen en común un grupo de objetos. Una clase es una abstracción que encapsula los datos y el comportamiento relacionados, lo que permite la reutilización del código y la creación de objetos de manera eficiente.
+
+10) Que es (POO)
+R/
+POO significa Programación Orientada a Objetos, y es un paradigma de programación que se centra en el concepto de objetos, que son instancias de una clase. En la POO, los datos y el comportamiento se encapsulan en objetos, y se utilizan interacciones entre ellos para llevar a cabo tareas.
+
+En POO, se definen clases, que son plantillas o moldes que describen la estructura y el comportamiento de un conjunto de objetos relacionados. Cada objeto creado a partir de una clase tiene sus propios datos y métodos, pero comparte la misma estructura y comportamiento que se definió en la clase.
+
+La POO tiene cuatro pilares fundamentales, que son la encapsulación, la herencia, el polimorfismo y la abstracción. 
+
+La encapsulación se refiere a la ocultación de la complejidad interna de un objeto, exponiendo solo una interfaz pública para interactuar con él. 
+
+La herencia permite que una clase herede propiedades y métodos de otra clase, lo que fomenta la reutilización del código. 
+
+El polimorfismo se refiere a la capacidad de objetos diferentes de responder a los mismos mensajes o métodos de diferentes maneras. 
+
+Finalmente, la abstracción se refiere a la capacidad de simplificar un objeto a su esencia fundamental, ignorando detalles irrelevantes.
+
+11) Que es un objeto
+R/ 
+Un objeto es una instancia de una clase que representa una entidad del mundo real y que consta de datos y métodos que definen su comportamiento y permiten que se interactúe con él.
+
+12) que es un metodo
+R/
+un método es una función definida dentro de una clase que se utiliza para realizar acciones específicas en los objetos de esa clase. Los métodos encapsulan la funcionalidad dentro de los objetos, lo que permite una programación modular y una reutilización del código.
+
+12) Que es una propiedades
+R/
+una propiedad es un valor asociado a un objeto de una clase que describe una característica o atributo de ese objeto. Las propiedades se utilizan para almacenar y manipular datos dentro de los objetos de una clase y son una parte fundamental de la programación orientada a objetos.
+
+Las propiedades se definen dentro de una clase y se utilizan para describir los datos que deben estar presentes en cada objeto de esa clase. Por ejemplo, una clase de "Persona" podría tener propiedades como nombre, edad, género y dirección, que describen los atributos de cada objeto de "Persona".
+
+Las propiedades pueden tener diferentes visibilidades, como público, privado o protegido, que determinan si las propiedades son accesibles desde fuera de la clase. Las propiedades también pueden tener diferentes tipos de datos, como enteros, cadenas, booleanos o incluso otros objetos.
+
+13) Ques es una instancia
+R/
+una instancia es un objeto individual creado a partir de una clase. Cuando se crea una instancia de una clase, se reserva un espacio de memoria para los datos de ese objeto y se inicializan los valores de las propiedades definidas en la clase.
+
+Las instancias permiten crear múltiples objetos de una misma clase, cada uno con su propio conjunto de valores de propiedades. Por ejemplo, si se tiene una clase de "Coche", se podrían crear múltiples instancias de esa clase, cada una con diferentes valores de propiedades, como la marca, el modelo, el año, el color, etc.
+
+14) que son la Visibilidad de datos
+R/
+
+la visibilidad de datos se refiere al nivel de acceso que tienen los miembros de una clase (propiedades y métodos) desde dentro y fuera de la clase. Hay tres tipos de visibilidad de datos en PHP: público, privado y protegido.
+
+Público: los miembros públicos son accesibles desde cualquier lugar, ya sea dentro o fuera de la clase. Cualquier código que tenga acceso a un objeto de la clase puede acceder a sus miembros públicos.
+
+Privado: los miembros privados solo son accesibles desde dentro de la clase. No pueden ser accedidos desde fuera de la clase ni desde las subclases. Los miembros privados se utilizan para encapsular la funcionalidad dentro de la clase y ocultar los detalles de implementación.
+
+Protegido: los miembros protegidos son accesibles desde dentro de la clase y desde sus subclases. No pueden ser accedidos desde fuera de la clase o las subclases. Los miembros protegidos se utilizan para permitir que las subclases accedan a los datos de la clase base.
+
+La visibilidad de datos es importante porque permite controlar el acceso a los miembros de la clase y garantizar que los datos sean manipulados de forma coherente. Al definir los miembros de una clase con diferentes niveles de visibilidad, se puede proteger la integridad de los datos y garantizar que la clase funcione correctamente.
+
+15) Que es el metodo Constructor
+R/
+el método constructor es un método especial que se llama automáticamente cuando se crea un objeto de una clase. El método constructor se utiliza para inicializar los datos de un objeto y prepararlo para su uso.
+
+El método constructor se llama automáticamente cuando se crea una nueva instancia de una clase, utilizando la palabra clave "new". El constructor generalmente toma argumentos que se utilizan para inicializar las propiedades del objeto.
+
+El método constructor tiene el mismo nombre que la clase y se define utilizando la palabra clave "__construct()". En PHP, si una clase no tiene un constructor explícito definido, se utiliza un constructor predeterminado que no toma argumentos.
+
+Aquí hay un ejemplo de un constructor en PHP:
+
+class Coche {
+  public $marca;
+  public $modelo;
+
+  public function __construct($marca, $modelo) {
+    $this->marca = $marca;
+    $this->modelo = $modelo;
+  }
+}
+
+$miCoche = new Coche("Toyota", "Corolla");
+
+En este ejemplo, la clase "Coche" tiene un constructor que toma dos argumentos: la marca y el modelo del coche. El constructor inicializa las propiedades "marca" y "modelo" del objeto utilizando los valores de los argumentos. Luego, se crea una nueva instancia de la clase "Coche" llamando al constructor con los valores "Toyota" y "Corolla".
+
+16) Que son los Métodos estáticos
+R/
+los métodos estáticos son métodos que se pueden llamar sin crear una instancia de una clase. Los métodos estáticos se definen utilizando la palabra clave "static" y solo pueden acceder a otros miembros estáticos de la clase.
+
+La sintaxis para llamar a un método estático es la siguiente:
+
+Clase::metodo_estatico();
+
+Los métodos estáticos son útiles cuando se desea llamar a una función relacionada con la clase sin tener que crear un objeto de la clase. Por ejemplo, si se tiene una clase que representa una base de datos y se desea conectarse a la base de datos, se puede crear un método estático para realizar la conexión:
+
+class ConexionDB {
+  private static $conexion;
+
+  public static function conectar() {
+    if (!isset(self::$conexion)) {
+      // Conexión a la base de datos
+      self::$conexion = mysqli_connect('localhost', 'usuario', 'contraseña', 'basedatos');
+    }
+
+    return self::$conexion;
+  }
+}
+
+En este ejemplo, la clase "ConexionDB" tiene un método estático llamado "conectar()" que devuelve una conexión a la base de datos. El método utiliza una variable estática llamada "$conexion" para almacenar la conexión. Si la variable "$conexion" aún no está definida, se realiza la conexión a la base de datos.
+
+17) Que son las Variables de session
+R/
+son variables especiales que se pueden utilizar para almacenar datos que deben persistir entre varias páginas o visitas a un sitio web. Una vez que se crea una sesión, se pueden almacenar variables de sesión en el servidor web que se mantendrán disponibles para todas las páginas que se visiten en el mismo sitio web durante la duración de la sesión.
+
+Para utilizar variables de sesión en PHP, primero se debe iniciar una sesión en la página utilizando la función "session_start()". Después de iniciar la sesión, se pueden crear y acceder a variables de sesión utilizando el array superglobal $_SESSION. Por ejemplo, para crear una variable de sesión llamada "usuario" con el valor "juan", se puede usar el siguiente código:
+
+<?php
+session_start();
+
+$_SESSION['usuario'] = 'juan';
+?>
+
+
+Para acceder a la variable de sesión "usuario" en otra página, simplemente se debe iniciar la sesión y acceder a la variable utilizando el array superglobal $_SESSION:
+
+<?php
+session_start();
+
+echo "Bienvenido " . $_SESSION['usuario'];
+?>
+
+
+
+18) que es la Función include, Función require y diferencias
+
+la función include() y la función require() en PHP se utilizan para insertar el contenido de un archivo dentro de otro archivo PHP. La diferencia principal entre ambas es que include() mostrará una advertencia y continuará ejecutando el script si el archivo no se encuentra, mientras que require() mostrará un error fatal y detendrá la ejecución del script.
+
+Ejemplo de uso de la función include():
+
+<?php
+include("archivo.php");
+?>
+
+
+Ejemplo de uso de la función require():
+
+<?php
+require("archivo.php");
+?>
